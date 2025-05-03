@@ -1,0 +1,8 @@
+.section {
+  margin: 120px auto 0;
+  min-height: 320px;
+  width: fit-content;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}

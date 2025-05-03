@@ -1,0 +1,77 @@
+.section {
+  width: 600px;
+  height: 912px;
+  display: flex;
+  flex-direction: column;
+}
+
+.listContainer {
+  min-height: 400px;
+  box-sizing: border-box;
+  margin-top: auto;
+  margin-bottom: auto;
+  justify-self: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.listContainerRecept {
+  background: rgba(121, 121, 129, 0.048);
+  border-radius: 50px;
+}
+
+.list {
+  width: 97%;
+  height: fit-content;
+  max-height: 560px;
+  margin: 16px auto;
+  list-style-type: none;
+  padding: 0 8px 0 0;
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  grid-template-rows: auto;
+  row-gap: 16px;
+  overflow: scroll;
+  overflow-x: hidden;
+}
+
+.lowerPanel {
+  width: fit-content;
+  margin-top: auto;
+  margin-bottom: 85px;
+  margin-left: auto;
+  min-height: fit-content;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: right;
+}
+
+.lowerPanel svg {
+  width: 33px;
+  height: 33px;
+  margin-right: 40px;
+}
+
+.listItem {
+  width: 100%;
+}
+
+/* кастомизация скролла */
+
+.list::-webkit-scrollbar {
+  width: 8px;
+}
+
+.list::-webkit-scrollbar-track {
+  background: #2F2F37;
+}
+
+.list::-webkit-scrollbar-thumb {
+  background: #8585AD;
+}
+
+.list::-webkit-scrollbar-thumb:hover {
+  background: #9a9ac7;
+}
